@@ -28,17 +28,15 @@ h2 {
     margin: 0 auto;
     display: block;
     width: 80%;
+    overflow: auto;
 }
 
-.main-header {
-    width: 45%;
-    margin: 10px 0;
-}
 
 .main-header img#logo {
     margin: 10px 0;
     display: block;
-    width: 45%
+    width: 45%;
+    transition: width 2s
 }
 
 .main-header .main-nav {
@@ -76,6 +74,7 @@ h2 {
 #content {
     width: 70%;
     float: left;
+    transition: width 1s;
 }
 
 #content article {
@@ -83,6 +82,7 @@ h2 {
     background: #fff;
     padding: 10px 15px;
     margin-top: 10px;
+    overflow: auto;
 }
 
 #content article span {
@@ -106,6 +106,7 @@ h2 {
 #sidebar {
     width: 30%;
     float: left;
+    transition: opacity 4s ease-in-out;
 }
 
 #sidebar .block {
@@ -120,4 +121,173 @@ footer {
     height: 40px;
     border: #c13046 1px solid;
     border-radius: 5px;
+}
+
+/* Start Media Queries */
+/* iPads (portrait and landscape) */
+@media only screen and (min-width: 768px) and (max-width: 980px) {
+
+    #container {
+        width: 95%
+    }
+
+    .main-header img#logo {
+        margin: auto;
+        display: block;
+        width: 65%;
+        transition: width 1s;
+    }
+
+    .main-header .main-nav {
+        background: #882433;
+        height: 40px;
+        border-radius: 5px;
+        border: #c13046 1px solid;
+        transition: height 1s;
+    }
+
+    #content {
+        width: 100%;
+        float: none;
+        overflow: auto;
+        transition: width 1s;
+    }
+
+    #sidebar {
+        width: 100%;
+        float: none;
+    }
+
+    #sidebar .block {
+        margin-left: 0
+    }
+}
+
+/* Small Tablets */
+@media only screen and (min-width: 569px) and (max-width: 767px) {
+
+    #container {
+        width: 95%
+    }
+
+    .main-header img#logo {
+        margin: auto;
+        display: block;
+        width: 65%;
+    }
+
+    .main-header .main-nav {
+        height: auto;
+        border-radius: 5px;
+        border: #c13046 1px solid;
+        display: block;
+        width: 99%;
+        overflow: hidden;
+    }
+
+    .main-header .main-nav ul {
+        padding: 2% 1%;
+        text-align: center;
+        width: 98%;
+    }
+
+    .main-header .main-nav li {
+        float: none;
+        display: block;
+        margin-right: 0;
+        width: 100%;
+        border-bottom: #a3293b 1px solid;
+    }
+
+    .main-header .main-nav li a {
+        margin-bottom: 2px;
+    }
+
+    .main-header .main-nav li a:hover, .main-header .main-nav li a.active {
+        display: block;
+    }
+
+    #content {
+        width: 100%;
+        float: none;
+        overflow: auto;
+    }
+
+    #sidebar {
+        width: 100%;
+        float: none;
+    }
+
+    #sidebar .block {
+        margin-left: 0
+    }
+
+
+}
+
+/* Smartphones */
+@media only screen and (min-width: 240px) and (max-width: 568px) {
+
+    #container {
+        width: 95%
+    }
+
+    .main-header img#logo {
+        margin: auto;
+        display: block;
+        width: 95%;
+    }
+
+    .main-header .main-nav {
+        height: auto;
+        border-radius: 5px;
+        border: #c13046 1px solid;
+        display: block;
+        width: 99%;
+        overflow: hidden;
+    }
+
+    .main-header .main-nav ul {
+        padding: 2% 1%;
+        text-align: center;
+        width: 98%;
+    }
+
+    .main-header .main-nav li {
+        float: none;
+        display: block;
+        margin-right: 0;
+        width: 100%;
+        border-bottom: #a3293b 1px solid;
+    }
+
+    .main-header .main-nav li a {
+        margin-bottom: 2px;
+    }
+
+    .main-header .main-nav li a:hover, .main-header .main-nav li a.active {
+        display: block;
+    }
+
+    #content {
+        width: 100%;
+        float: none;
+        overflow: auto;
+    }
+
+    #content a.readmore {
+        display: block;
+        float: none;
+        border-radius: 5px;
+        text-align: center;
+    }
+
+    #sidebar {
+        width: 100%;
+        float: none;
+    }
+
+    #sidebar .block {
+        margin-left: 0
+    }
 }
