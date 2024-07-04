@@ -1,0 +1,16 @@
+.box {
+    border: 2px black solid;
+    background-color: red;
+    padding: 4px;
+    margin: 4px 0;
+}
+.parent {
+    border: 2px black solid;
+    padding: 2px
+}
+.icon {
+    width: 1em;
+    height: 1em;
+    background: red;
+    display: inline-block;
+}
