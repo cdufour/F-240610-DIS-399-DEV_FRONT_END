@@ -14,4 +14,4 @@ Intégrer au code à la page __index.html__ toutes les classes __Bootstrap__ que
 - Carousel
 - Navbar
 
-afin de vous rapprocher le plus possible d'une design affiché sur la vidéo.
+afin de vous rapprocher le plus possible d'une design affiché sur la vidéo, en fonction des limites de temps imparties.
