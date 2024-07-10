@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Password Generator</title>
+</head>
+<body>
+    <h1>Password Generator</h1>
+
+    <button id="btnGenerate">Generate</button>
+    <div id="password"></div>
+    
+    <script>
+        var btnGenerate = document.getElementById("btnGenerate");
+        var password = document.getElementById("password");
+         
+        btnGenerate.addEventListener("click", () => {
+            // generate random password
+            // can be local, front side
+            var pass = "abc123";
+
+            // can be distant, request to distant web service
+            // fetch().then()
+
+            password.innerText = pass;
+        })
+
+    </script>
+</body>
+</html>
