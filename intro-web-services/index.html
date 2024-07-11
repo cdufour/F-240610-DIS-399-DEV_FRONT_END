@@ -15,16 +15,17 @@
         var btnGenerate = document.getElementById("btnGenerate");
         var password = document.getElementById("password");
          
-        btnGenerate.addEventListener("click", () => {
-            // generate random password
-            // can be local, front side
-            var pass = "abc123";
+        btnGenerate.addEventListener("click", getRandomPassword);
 
-            // can be distant, request to distant web service
-            // fetch().then()
-
-            password.innerText = pass;
-        })
+        function getRandomPassword() {
+            // ajax request
+            let url = 'http://localhost:3200/password';
+            fetch(url)
+                .then(res => res.json())
+                .then(res => {
+                    password.innerText = res.password;
+                })
+        }
 
     </script>
 </body>
