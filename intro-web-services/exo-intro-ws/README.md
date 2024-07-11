@@ -1,7 +1,9 @@
 # Intro WS - Exo
 
 ## Consignes
-En vous inspirant de cette [vidéo](https://www.youtube.com/watch?v=46tUIyqNS5k) et de cette capture <img src="capture.png" width="400">
+En vous inspirant de cette [vidéo](https://www.youtube.com/watch?v=46tUIyqNS5k) et de cette capture 
+
+<img src="capture.png" width="400">
 créer une interface web affichant les deux éléments suivants:
 
 
