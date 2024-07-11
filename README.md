@@ -8,3 +8,4 @@
 | 5 et 8 juillet   | Bootstrap                 | 
 | 9 juillet       | Projet                 | 
 | 10-11 juillet       | Intro aux services web                 |
+| 19 et 22-25 juillet       | Vuejs                |

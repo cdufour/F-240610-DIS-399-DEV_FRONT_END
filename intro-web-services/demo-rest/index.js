@@ -92,7 +92,6 @@ app.post('/login', async (req, res) => {
     if (result.length > 0) {
         const userId = result[0].id;
         const userPassHash = result[0].password;
-
         bcrypt.compare(password, userPassHash, (err, compareResult) => {
             if (compareResult) {
                 // identical passwords
@@ -104,14 +103,10 @@ app.post('/login', async (req, res) => {
                 res.json({login: false});
             }
         })
-
     } else {
         res.json({login: false});
     }
 })
-
-
-
 
 app.listen(port, () => {
     console.log('Server running on ' + port + '...');

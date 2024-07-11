@@ -1,7 +1,8 @@
 # Intro WS - Exo
 
 ## Consignes
-Créer une interface web affichant les deux éléments suivants:
+En vous inspirant de cette [vidéo](https://www.youtube.com/watch?v=46tUIyqNS5k) et de cette capture <img src="capture.png" width="400">
+créer une interface web affichant les deux éléments suivants:
 
 
 1. Un menu déroulant dont les choix seront alimentés par des genres musicaux provenant de la base __chinook.db__ (table __genres__)
