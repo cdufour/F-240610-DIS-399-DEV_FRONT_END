@@ -11,9 +11,7 @@ function init() {
         genres = res;
         buildSelect();
     })
-
     btnSubmit.addEventListener('click', postGenre);
-
 }
 
 function buildSelect() {
@@ -35,6 +33,11 @@ function postGenre() {
         body: JSON.stringify({name})
     }).then(res => res.json()).then(res => {
         requestResult.innerText = 'Genre id: ' + res.genreId + ' saved in database';
+        const newOption = document.createElement('option');
+        newOption.value = res.genreId;
+        newOption.innerText = name;
+        selectGenre.appendChild(newOption);
+        console.log("newOption", newOption);
     })
 }
 
