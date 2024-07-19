@@ -1,6 +1,6 @@
 # Exo CodeGen
 
-Réaliser une composant Vue en vous basant sur cette capture:
+Réaliser un composant Vue en vous basant sur cette capture:
 <img src="codegen-capture.png" />
 
 L'interface permettra de générer un code numérique de la longeur indiquée dans champ dédié.
