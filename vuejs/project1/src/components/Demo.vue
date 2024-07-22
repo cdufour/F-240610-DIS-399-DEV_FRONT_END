@@ -14,7 +14,7 @@ function onClick() {
 
 <template>
     <div>
-        <h1>{{ title }} </h1>
+        <h1>{{ title }}</h1>
         <p>{{ n }}</p>
         <button v-on:click="onClick">Click</button>
         <button @click="onClick">Click</button>
