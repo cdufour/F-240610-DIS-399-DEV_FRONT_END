@@ -1,17 +1,51 @@
+<template>
+    <div>
+        <app-header/>
+        <div class="container">
+            <!-- <Cars :cars="cars" /> -->
+            <Cars />
+            <hr/>
+            <CarBrands>
+                <ul>
+                    <li v-for="(brand, index) in brands" :key="index">
+                        {{ brand }}
+                    </li>
+                </ul>
+            </CarBrands>
+        </div>
+    </div>
+</template>
+
 <script setup>
-import Demo from './components/Demo.vue'
-import Textlimit from './components/exos/TextLimit.vue'
-import Codegen from './components/exos/CodeGen.vue'
+    import Cars from '@/components/Cars/index.vue'
+    import CarBrands from '@/components/Cars/brands.vue'
+    import { reactive, provide } from 'vue'
+
+    const brands = reactive(['Toyota', 'Peugeot', 'Suzuki'])
+
+    const cars = reactive([
+        {model:'F9',brand:'Ferrari'},
+        {model:'911',brand:'Porsche'},
+        {model:'Fiesta',brand:'Ford'}
+    ])
+
+    const updateCar = () => {
+        cars[0].brand = 'Fiat';
+    }
+
+    provide('cars', { cars, updateCar })
 
 </script>
 
-<template>
-  <div>
-    <h2>Project 1</h2>
-    <!-- <Demo /> -->
-    <!-- <Textlimit limit="20" /> -->
-    <Codegen :withLetters="true" />
-    <Codegen />
-  </div>
-</template>
-
+<style scoped>
+    body {
+        padding: 0;
+        margin: 0;
+        font-family: 'Roboto',sans-serif;
+    }
+    .container { 
+        min-height: 84vh;
+        box-sizing: border-box;
+        padding: 20px;
+    }
+</style>
