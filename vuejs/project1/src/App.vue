@@ -3,6 +3,7 @@
         <app-header/>
         <div class="container">
             <!-- <Cars :cars="cars" /> -->
+            <!--
             <Cars />
             <hr/>
             <CarBrands>
@@ -12,6 +13,9 @@
                     </li>
                 </ul>
             </CarBrands>
+            -->
+            <!-- <Citychoice /> -->
+            <Switchbutton />
         </div>
     </div>
 </template>
@@ -19,7 +23,9 @@
 <script setup>
     import Cars from '@/components/Cars/index.vue'
     import CarBrands from '@/components/Cars/brands.vue'
-    import { reactive, provide } from 'vue'
+    import { reactive, provide, ref } from 'vue'
+    import Citychoice from '@/components/exos/Citychoice/index.vue'
+    import Switchbutton from '@/components/exos/SwitchButton.vue'
 
     const brands = reactive(['Toyota', 'Peugeot', 'Suzuki'])
 
@@ -34,7 +40,6 @@
     }
 
     provide('cars', { cars, updateCar })
-
 </script>
 
 <style scoped>
