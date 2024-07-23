@@ -3,19 +3,25 @@
         <app-header/>
         <div class="container">
             <!-- <Cars :cars="cars" /> -->
-            <!--
-            <Cars />
+            
+            <!-- <Cars /> -->
             <hr/>
-            <CarBrands>
-                <ul>
-                    <li v-for="(brand, index) in brands" :key="index">
-                        {{ brand }}
-                    </li>
-                </ul>
-            </CarBrands>
-            -->
+            <!-- <CarBrands>
+                <template v-slot:brands>
+                    <ul>
+                        <li v-for="(brand, index) in brands" :key="index">
+                            {{ brand }}
+                        </li>
+                    </ul>
+                </template>
+                <template v-slot:other>
+                    <p>Fiat</p>
+                </template>
+            </CarBrands> -->
+            
             <!-- <Citychoice /> -->
-            <Switchbutton />
+            <!-- <Switchbutton /> -->
+            <Life v-if="showLife" />
         </div>
     </div>
 </template>
@@ -26,6 +32,7 @@
     import { reactive, provide, ref } from 'vue'
     import Citychoice from '@/components/exos/Citychoice/index.vue'
     import Switchbutton from '@/components/exos/SwitchButton.vue'
+    import Life from '@/components/Life/index.vue'
 
     const brands = reactive(['Toyota', 'Peugeot', 'Suzuki'])
 
@@ -40,6 +47,13 @@
     }
 
     provide('cars', { cars, updateCar })
+
+    const showLife = ref(true)
+
+    setTimeout(() => {
+        showLife.value = false;
+    }, 5000)
+
 </script>
 
 <style scoped>
