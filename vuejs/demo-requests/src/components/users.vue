@@ -1,6 +1,10 @@
 <template>
     <div class="row">
+        <div v-if="state.loading">
+            <app-loader />
+        </div>
         <div 
+        v-if="!state.loading"
         class="col-auto mb-4"
         v-for="user in state.users" :key="user.id"
         >
@@ -25,20 +29,37 @@
 
 <script setup>
 import axios from 'axios'
+import { useToast } from 'vue-toast-notification';
 import { reactive, onMounted } from 'vue'
 
+const $toast = useToast();
 const state = reactive({
-    users: []
+    users: [],
+    loading: true
 })
 
-const getUsers = () => {
-    axios.get('http://localhost:3000/users')
-        .then(res => {
-            state.users = res.data;
-        })
-        .catch(err => {
-            console.log(err);
-        })
+// const getUsers = () => {
+//     axios.get('http://localhost:3000/users')
+//         .then(res => {
+//             state.users = res.data;
+//             state.loading = false;
+//         })
+//         .catch(err => {
+//             $toast.error('Oups, une erreur est survenue');
+//             console.log(err);
+//         })
+// }
+
+// syntaxe alternative (async/await)
+const getUsers = async() => {
+    try {
+        const res = await axios.get('http://localhost:3000/users');
+        state.users = res.data;
+        state.loading = false;
+    } catch(err) {
+        $toast.error('Oups, une erreur est survenue');
+        console.log(err);
+    }
 }
 
 onMounted(() => {

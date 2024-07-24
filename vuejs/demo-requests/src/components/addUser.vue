@@ -1,35 +1,56 @@
 <template>
-    <h2>Add users</h2>
     <div>
-        <div class="form-group mb-3">
-            <label>Name</label>
-            <input class="form-control" type="text" v-model="user.name">
+        <h2>Add users</h2>
+        <div v-if="loading">
+            <app-loader/>
         </div>
+        <div>
+            <div class="form-group mb-3">
+                <label>Name</label>
+                <input class="form-control" type="text" v-model="user.name">
+            </div>
 
-        <div class="form-group mb-3">
-            <label>Lastname</label>
-            <input class="form-control" type="text" v-model="user.lastname">
+            <div class="form-group mb-3">
+                <label>Lastname</label>
+                <input class="form-control" type="text" v-model="user.lastname">
+            </div>
+
+            <button 
+                class="btn btn-primary" 
+                @click.prevent="submitForm"
+            >Submit</button>
         </div>
-
-        <button 
-            class="btn btn-primary" 
-            @click.prevent="submitForm"
-        >Submit</button>
     </div>
 </template>
 
 <script setup>
-    import { reactive } from 'vue';
+import axios from 'axios'
+import { useToast } from 'vue-toast-notification';
+import { reactive, ref } from 'vue';
 
-    const user = reactive({
-        name:'',
-        lastname:''
-    });
+const $toast = useToast();
+const loading = ref(false);
+const user = reactive({
+    name:'',
+    lastname:''
+});
 
-    const submitForm = () => {
-        console.log(user);
-    }
-
-
+const submitForm = () => {
+    loading.value = true;
+    axios({
+        method: 'POST',
+        url: 'http://localhost:3000/users',
+        data: user
+    })
+    .then(() => {
+        $toast.success(`Bravo, utilisateur ${user.name} ajouté !`)
+    })
+    .catch(err => {
+        $toast.error('Oups, une erreur est survenue')
+    })
+    .finally(() => {
+        loading.value = false;
+    })
+}
 
 </script>

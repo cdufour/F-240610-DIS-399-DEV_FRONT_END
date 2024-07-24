@@ -1,9 +1,19 @@
 {
-    "users": [
-      {
-        "id": 1,
-        "name": "Chris",
-        "password": "aLmp56_toctoC"
-      }
-    ]
-  }
+  "users": [
+    {
+      "id": "1",
+      "name": "Chris",
+      "password": "aLmp56_toctoC"
+    },
+    {
+      "id": "394e",
+      "username": "Alessandro",
+      "password": "abcABC(abc123"
+    },
+    {
+      "id": "7051",
+      "username": "Gabriele",
+      "password": "eazezaezaeza78LL)"
+    }
+  ]
+}

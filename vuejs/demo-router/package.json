@@ -1,5 +1,5 @@
 {
-  "name": "requests",
+  "name": "vueroutes",
   "version": "0.0.0",
   "private": true,
   "type": "module",
@@ -9,9 +9,9 @@
     "preview": "vite preview"
   },
   "dependencies": {
-    "axios": "^1.6.5",
+    "axios": "^1.7.2",
     "vue": "^3.3.11",
-    "vue-toast-notification": "^3.1.2"
+    "vue-router": "^4.4.0"
   },
   "devDependencies": {
     "@vitejs/plugin-vue": "^4.5.2",
