@@ -2,6 +2,9 @@
 
 Réaliser une application Vue du type jeu "vrai/faux".
 
+<img src="vraifaux-capture.png" width="400">
+<br>
+
 L'interface utilisateur devra
 - En priorité: permettre de jouer (démarrer une partie)
 - Secondairement: permettre de paramètrer le jeu
