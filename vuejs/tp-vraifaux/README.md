@@ -12,12 +12,12 @@ Ce paramètrage déterminera le nombre et le type de questions qui alimenteront 
 
 ## Le jeu (gameplay)
 
-Les questions seront affichées l'une après l'autre. 
-L'ordre sera de préférence aléatoire.
-L'interface permettra de donner la réponse (vrai ou faux).
-Le clic/pression sur la réponse permettra de passer à la question suivante.
+Les questions seront affichées l'une après l'autre.  
+L'ordre sera de préférence aléatoire. 
+L'interface permettra de donner la réponse (vrai ou faux).  
+Le clic/pression sur la réponse permettra de passer à la question suivante.  
 
-Le jeu se détermine lorsque l'utilisateur a répondu à la dernière question.
+Le jeu se termine lorsque l'utilisateur a répondu à la dernière question.
 Afficher alors un écran de fin indiquant:
 - le score obtenu
 - une possiblité de rejouer
