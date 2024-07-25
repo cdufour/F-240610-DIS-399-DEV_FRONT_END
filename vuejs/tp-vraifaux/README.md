@@ -3,8 +3,8 @@
 Réaliser une application Vue du type jeu "vrai/faux".
 
 L'interface utilisateur devra
-- permettre de jouer (démarrer une partie)
-- permettre de paramètrer le jeu
+- En priorité: permettre de jouer (démarrer une partie)
+- Secondairement: permettre de paramètrer le jeu
     - Nombre de questions
     - Catégories. Exemple: uniquement "Histoire" ou bien "Toutes"
     - Niveau de difficulté.
