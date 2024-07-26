@@ -1,6 +1,6 @@
 # TP Vrai-faux
 
-Réaliser une application Vue du type jeu "vrai/faux".
+Réaliser une application Vue de type jeu "vrai/faux".
 
 <img src="vraifaux-capture.png" width="400">
 <br>
