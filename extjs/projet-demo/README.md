@@ -6,11 +6,11 @@ framework Sencha Extjs.
 
 Au minima, l'application devra inclure:
 - une navigation
-- au moins 6 composants différents
+- au moins 6 composants différents (ex: Date, Combobox, Radio, etc.)
 - de la réactivité. Réaction à tel ou tel événement (ex: clic, passage de souris, etc.)
-- des données embarquées (utilisées par tel ou tel composant)
-- des données obtenues par requêtes ajax vers un service (api public, json-server local, etc.)
-- du data binding
+- des données 
+    - embarquées et/ou 
+    - obtenues par requêtes ajax vers un service (api public, json-server local, etc.)
 
 Le sujet de l'application est totalement libre. 
 Idées d'application démo:

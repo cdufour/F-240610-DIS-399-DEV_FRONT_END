@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Extjs - Intro</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/extjs/6.2.0/classic/theme-classic/resources/theme-classic-all.css" rel="stylesheet" />
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/extjs/6.2.0/ext-all.js"></script>
+    <script>
+        Ext.onReady(() => {
+
+            var panel = Ext.create({
+                xtype: 'panel',
+                title: 'Panel Title',
+                height: 400,
+                width: 400,
+                bodyPadding: 12,
+                html: '<h2>Sample HTML text</h2>',
+                renderTo: 'app'
+            });
+            
+            /*
+            var items = [
+                {text: 'toto', leaf: true}
+            ]
+            var treelist = Ext.create({
+                xtype: 'treelist',
+                store: {
+                    root: {
+                    expanded: true,
+                        children: items
+                    }
+                },
+                renderTo: 'app'
+            });
+            */
+
+
+
+            // ajax request
+            Ext.Ajax.request({
+                url: 'https://jsonplaceholder.typicode.com/users',
+                method: 'GET'
+            }).then((res, opts) => {
+                //console.log(JSON.parse(res.responseText))
+                var users = Ext.decode(res.responseText);
+                panel.setTitle(users[0].name);
+                panel.setHtml('<h2>'+users[0].username+'</h2>');
+            })
+        })
+    </script>
+</head>
+<body>
+    <h1>Extjs - Intro</h1>
+    <div id="app"></div>
+</body>
+</html>
