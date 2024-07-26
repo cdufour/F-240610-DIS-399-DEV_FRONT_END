@@ -1,7 +1,7 @@
 # Projet Démo
 
 ## Consignes
-Lundi 29/8/24, à partir de 15h30, chaque groupe présentera, à tour de rôle, une micro application de démonstration réalisée avec le
+Lundi 29/7/24, à partir de 15h30, chaque groupe présentera, à tour de rôle, une micro application de démonstration réalisée avec le
 framework Sencha Extjs. 
 
 Au minima, l'application devra inclure:
