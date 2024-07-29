@@ -20,5 +20,27 @@ Ext.define('DemoApp.view.main.MainController', {
     myFunction: function (sender, record, index, eOpts) {
         console.log('My Function');
         console.log(record.data.name);
+    },
+
+    compute: function() {
+        console.log('compute');
+        const me = this;
+        const vm = me.getViewModel();
+        op1 = parseFloat(vm.get('operand1'));
+        op2 = parseFloat(vm.get('operand2'));
+        op = vm.get('operation').op;
+        var result;
+        if (op === 'add') {
+            result = op1 + op2;
+        } else if (op === 'sub') {
+            result = op1 - op2;
+        } else if (op === 'mul') {
+            result = op1 * op2;
+        } else if (op === 'div') {
+            result = op1 / op2;
+        } else {
+            result = 0;
+        }
+        vm.set('result', result)
     }
 });
