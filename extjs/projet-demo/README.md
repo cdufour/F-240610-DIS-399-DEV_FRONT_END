@@ -1,10 +1,9 @@
 # Projet Démo
 
 ## Consignes
-Lundi 29/7/24, à partir de 15h30, chaque groupe présentera, à tour de rôle, une micro application de démonstration réalisée avec le
-framework Sencha Extjs. 
+Lundi 29/7/24, à 17h, chaque groupe devra fournir les sources d'une micro application de démonstration réalisée avec le framework Sencha Extjs. 
 
-Au minima, l'application devra inclure:
+A minima, l'application devra inclure:
 - une navigation
 - au moins 6 composants différents (ex: Date, Combobox, Radio, etc.)
 - de la réactivité. Réaction à tel ou tel événement (ex: clic, passage de souris, etc.)
