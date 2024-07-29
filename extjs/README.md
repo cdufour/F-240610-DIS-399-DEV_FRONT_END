@@ -11,3 +11,4 @@
 - [ExtJS Cheat sheet](https://github.com/CyberT33N/extjs-cheat-sheet)
 - [How To Implement MVVM Architecture in Ext JS Web Application](https://www.sencha.com/blog/how-to-implement-mvvm-architecture-in-ext-js-web-application/)
 - [Mastering Ext JS ViewModel: Best Practices for Effective Implementation | youtube | en | 1h](https://youtu.be/lSxy25sH0a4?si=TJdUB9dXTmfoPN5P)
+- [Projet Démo | by Chris | youtube | fr | 20 min](https://www.youtube.com/watch?v=jWBR7HwlJDs)

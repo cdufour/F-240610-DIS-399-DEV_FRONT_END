@@ -16,6 +16,7 @@ Ext.define('DemoApp.view.main.Main', {
         'DemoApp.view.main.MainController',
         'DemoApp.view.main.MainModel',
         'DemoApp.view.main.List',
+        
         'DemoApp.view.main.Calculator'
     ],
 
@@ -104,9 +105,6 @@ Ext.define('DemoApp.view.main.Main', {
     {
         title: 'Calculator',
         iconCls: 'fa-bell',
-        // bind: {
-        //     html: 'Hehe'
-        // }
         items: [{
             xtype: 'maincalculator'
         }]

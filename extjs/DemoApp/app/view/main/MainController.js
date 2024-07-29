@@ -41,6 +41,6 @@ Ext.define('DemoApp.view.main.MainController', {
         } else {
             result = 0;
         }
-        vm.set('result', result)
+        vm.set('result', result) // update des data en binding
     }
 });
