@@ -1,12 +1,15 @@
 import { useState } from 'react'
-import './StateDemo1.css'
+import './TaskList.css'
+import TaskCard from './TaskCard'
 
-export default function StateDemo1() {
+export default function TaskList() {
     const [tasks, setTasks] = useState([
         {id: 5271, name: 'Nettoyer le garage', completed: true},
         {id: 7825, name: 'Apprendre le russe', completed: false},
         {id: 8391, name: 'Divorcer', completed: false}
     ])
+
+    const [show, setShow] = useState(true);
 
     function onDelete(id) {
         setTasks(tasks.filter(task => task.id !== id))
@@ -15,15 +18,18 @@ export default function StateDemo1() {
     return (
         <div className="App">
             <h2>Liste des tâches</h2>
+            <button className='trigger' onClick={() => setShow(!show)}>
+                { show ? 'Masquer' : 'Afficher' }
+            </button>
+
+            {show &&
             <ul>
             { tasks.map(task => (
-                <li key={task.id}>
-                    <span>{task.name}</span>
-                    <button onClick={ () => onDelete(task.id) } className="delete">
-                        Supprimer</button>
-                </li>
+                <TaskCard key={task.id} task={task} onDelete={onDelete} />
             ))}
             </ul>
+            }
+
         </div>
     )
 

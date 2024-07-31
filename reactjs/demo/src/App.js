@@ -1,14 +1,16 @@
 //import SimpleExamples from "./components/SimpleExamples"
 //import Counter from './components/Counter'
 //import CounterFC from './components/CounterFC'
-//import StateDemo1 from './components/StateDemo1'
-import Addition from './components/exos/Addition'
+import TaskList from './components/TaskList'
+//import Lorem from './components/exos/Lorem'
+//import Addition from './components/exos/Addition'
+import Header from './components/Header'
 
 export default function App() {
     return (
       <div>
-        <h1>Mon application React</h1>
-        <Addition difficulty="medium" />
+        <Header />
+        <TaskList />
       </div>
     )
 }

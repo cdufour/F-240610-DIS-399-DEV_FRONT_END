@@ -1,35 +1,27 @@
-import React from 'react';
+import React from 'react'
+import { useState } from 'react'
 
-const levels = {easy: 10, medium: 100, hard: 1000};
+const Addition = ({difficulty}) => {
 
-class Addition extends React.Component {
-    n1 = 0;
-    n2 = 0;
-    result = 0;
+    const [result, setResult] = useState('');
+    const levels = {easy: 10, medium: 100, hard: 1000};
 
-    constructor({difficulty}) {
-        super();
-        this.n1 = Math.floor(Math.random() * levels[difficulty]);
-        this.n2 = Math.floor(Math.random() * levels[difficulty]);
-        this.result = this.n1 + this.n2;
-        this.state = {resultVisible: false};
+    if (!difficulty) difficulty = 'easy'; // by default
+
+    const n1 =  Math.floor(Math.random() * levels[difficulty]);
+    const n2 =  Math.floor(Math.random() * levels[difficulty]);
+
+    function onClick() {
+        setResult(n1 + n2)
     }
 
-    onClick() {
-        this.setState({resultVisible: true})
-    }
-    
-    render() {
-        let result = this.state.resultVisible ? this.result : '';
-
-        return (
-            <div>
-                <span>{this.n1}</span> + <span>{this.n2}</span>
-                <button onClick={ () => this.onClick() }>Résultat</button>
-                <span>{result}</span>      
-            </div>
-        )
-    }
+    return (
+        <div>
+            <span>{n1}</span> + <span>{n2}</span>
+            <button onClick={onClick}>Résultat</button>
+            <span>{result}</span>
+        </div>
+    )
 }
 
-export default Addition;
+export default Addition
