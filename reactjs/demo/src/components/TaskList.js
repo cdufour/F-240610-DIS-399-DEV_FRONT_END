@@ -3,12 +3,13 @@ import './TaskList.css'
 import TaskCard from './TaskCard'
 import BoxCard from './BoxCard';
 
-export default function TaskList() {
-    const [tasks, setTasks] = useState([
-        {id: 5271, name: 'Nettoyer le garage', completed: true},
-        {id: 7825, name: 'Apprendre le russe', completed: false},
-        {id: 8391, name: 'Divorcer', completed: false}
-    ])
+export default function TaskList({tasks, setTasks}) {
+
+    // const [tasks, setTasks] = useState([
+    //     {id: 5271, name: 'Nettoyer le garage', completed: true},
+    //     {id: 7825, name: 'Apprendre le russe', completed: false},
+    //     {id: 8391, name: 'Divorcer', completed: false}
+    // ])
 
     const [show, setShow] = useState(true);
 

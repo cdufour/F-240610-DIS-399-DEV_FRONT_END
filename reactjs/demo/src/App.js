@@ -1,3 +1,4 @@
+import { useState } from 'react'
 import './App.css'
 
 //import SimpleExamples from "./components/SimpleExamples"
@@ -8,13 +9,20 @@ import TaskList from './components/TaskList'
 //import Addition from './components/exos/Addition'
 import Header from './components/Header'
 import Footer from './components/Footer'
+import AddTask from './components/AddTask';
 
 export default function App() {
-    return (
-      <div className='App'>
-        <Header />
-        <TaskList />
-        <Footer />
-      </div>
-    )
+
+  const [tasks, setTasks] = useState([]);
+
+  return (
+    <div className='App'>
+      <Header />
+      <main>
+        <AddTask tasks={tasks} setTasks={setTasks}  />
+        <TaskList tasks={tasks} setTasks={setTasks}  />
+      </main>
+      <Footer />
+    </div>
+  )
 }
