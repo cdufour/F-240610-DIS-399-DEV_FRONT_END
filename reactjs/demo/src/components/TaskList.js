@@ -1,6 +1,7 @@
 import { useState } from 'react'
 import './TaskList.css'
 import TaskCard from './TaskCard'
+import BoxCard from './BoxCard';
 
 export default function TaskList() {
     const [tasks, setTasks] = useState([
@@ -16,8 +17,8 @@ export default function TaskList() {
     }
 
     return (
-        <div className="App">
-            <h2>Liste des tâches</h2>
+        <section className="tasklist">
+            <h1>Liste des tâches</h1>
             <button className='trigger' onClick={() => setShow(!show)}>
                 { show ? 'Masquer' : 'Afficher' }
             </button>
@@ -30,7 +31,22 @@ export default function TaskList() {
             </ul>
             }
 
-        </div>
+            <BoxCard result="success">
+                <p className='title'>Notification de réussite</p>
+                <p className='description'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas at tempor metus. Donec sagittis sit amet nisl eget sagittis. Praesent et est pellentesque, ultrices odio eu, mollis dui. </p>
+            </BoxCard>
+
+            <BoxCard result="warning">
+                <p className='title'>Information importante</p>
+                <p className='description'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas at tempor metus. Donec sagittis sit amet nisl eget sagittis. Praesent et est pellentesque, ultrices odio eu, mollis dui. </p>
+            </BoxCard>
+
+            <BoxCard result="alert">
+                <p className='title'>Attention danger</p>
+                <p className='description'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas at tempor metus. Donec sagittis sit amet nisl eget sagittis. Praesent et est pellentesque, ultrices odio eu, mollis dui. </p>
+            </BoxCard>
+
+        </section>
     )
 
 }
