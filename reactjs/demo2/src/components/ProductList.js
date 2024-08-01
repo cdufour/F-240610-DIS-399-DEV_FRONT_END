@@ -9,25 +9,47 @@ const ProductList = () => {
     const [counter, setCounter] = useState(0);
     const [url, setUrl] = useState('http://localhost:3500/products');
 
+    /*
+    Approche n°3 - useCallback
+    */
     const fetchProducts = useCallback(async () => {
         const res = await fetch(url);
         const products = await res.json();
         setProducts(products);
     }, [url])
 
+    useEffect(() => {
+        fetchProducts();
+        console.log('-');
+    }, [fetchProducts])
+
+
+    /* 
+    Approche n°2
+    Problème: boucle infinie
+    */
+
+    // const fetchProducts = async () => {
+    //     const res = await fetch(url);
+    //     const products = await res.json();
+    //     setProducts(products);
+    // }
+
     // useEffect(() => {
     //     fetchProducts();
-    //     console.log('-');
     // }, [fetchProducts])
 
-    useEffect(() => {    
-        console.log('-');
-       fetch(url)
-        .then(res => res.json())
-        .then(products => {
-            setProducts(products);
-        })
-    }, [url])
+    /* 
+        Approche n°1
+    */
+    // useEffect(() => {    
+    //     console.log('-');
+    //     fetch(url)
+    //         .then(res => res.json())
+    //         .then(products => {
+    //             setProducts(products);
+    //         })
+    // }, [url])
 
     useEffect(() => {
         //console.log(counter);
