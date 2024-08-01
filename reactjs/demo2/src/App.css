@@ -15,8 +15,17 @@
   box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
 }
 
-.card.unavailable {
+.card .unavailable {
   background-color: #ffbebe;
+}
+
+.card .instock {
+  background-color: #06a02d;
+  font-size: 16px;
+  color: #FFFFFF;
+  border-radius: 5px;
+  padding: 5px;
+  display: inline;
 }
 
 .card .id {

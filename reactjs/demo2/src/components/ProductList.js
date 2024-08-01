@@ -1,22 +1,59 @@
-import { useState, useEffect } from 'react'
+import { useState, useEffect, useCallback } from 'react'
 
 const ProductList = () => {
 
     // json-server -p 3500 db.json
-    const api = 'http://localhost:3500/products';
+    //const api = 'http://localhost:3500/products';
 
-    useEffect(() => {
-        
-       fetch(api)
+    const [products, setProducts] = useState([]);
+    const [counter, setCounter] = useState(0);
+    const [url, setUrl] = useState('http://localhost:3500/products');
+
+    const fetchProducts = useCallback(async () => {
+        const res = await fetch(url);
+        const products = await res.json();
+        setProducts(products);
+    }, [url])
+
+    // useEffect(() => {
+    //     fetchProducts();
+    //     console.log('-');
+    // }, [fetchProducts])
+
+    useEffect(() => {    
+        console.log('-');
+       fetch(url)
         .then(res => res.json())
         .then(products => {
-            console.log(products)
+            setProducts(products);
         })
+    }, [url])
 
-    }, [])
+    useEffect(() => {
+        //console.log(counter);
+    }, [counter])
 
     return (
-        <div>ProductList</div>
+        <section>
+            <div className='filter'>
+                <button onClick={() => setCounter(counter + 1)}>{counter}</button>
+                <button onClick={() => setUrl('http://localhost:3500/products')}>Tous les produits</button>
+                <button onClick={() => setUrl('http://localhost:3500/products?in_stock=true')}>Produits disponibles</button>
+            </div>
+
+            { products.map(product => (
+                <div className='card' key={product.id}>
+                    <p className='id'>{product.id}</p>
+                    <p className='name'>{product.name}</p>
+                    <p className='info'>
+                        <span>${product.price}</span>
+                        <span className={product.in_stock ? 'instock' : 'unavailable'}>
+                            {product.in_stock ? 'En stock' : 'Non disponible'}
+                        </span>
+                    </p>
+                </div>
+            )) }
+        </section>
     )
 }
 
