@@ -10,6 +10,7 @@ const Header = () => {
             </Link>
             <nav className='navigation'>
                 <NavLink to="/" className='link'>Accueil</NavLink>
+                <NavLink to="/products" className='link'>Produits</NavLink>
                 <NavLink to="/contact" className='link'>Contact</NavLink>
             </nav>
         </header>
