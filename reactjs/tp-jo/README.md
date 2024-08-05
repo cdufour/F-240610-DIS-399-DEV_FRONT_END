@@ -1,6 +1,6 @@
 # TP JO (Jeux Olympiques)
 
-Créer une application React en vous inspirant de l'onglet "Equipes"  des capture suivantes:
+Créer une application React en vous inspirant uniquement de l'onglet "Equipes" des capture suivantes:
 
 Par défaut, afficher 5 pays (affichage "compact")
 <img src="capture1.png" width="400">  
