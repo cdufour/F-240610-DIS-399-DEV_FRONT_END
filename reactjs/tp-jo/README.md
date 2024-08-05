@@ -5,13 +5,12 @@ Créer une application React en vous inspirant uniquement de l'onglet "Equipes" 
 Par défaut, afficher 5 pays (affichage "compact")
 <img src="capture1.png" width="400">  
 <br><br>
-Affichage les 7 autres pays après clic sur le bouton "Plus" (qui alors devient "Moins"):
+Affichage complémentaire des 7 autres pays (affichage "complet") après clic sur le bouton "Plus" (qui alors devient "Moins"):
 <img src="capture2.png" width="400">  
 <br><br>
 Utiliser json-server pour récupérer les données (les données des 12 pays) depuis le fichier db.json.  
 
-<br><br>
+<br>
 Option (facultative): afficher les pays par ordre décroissant du nombre de médailles d'or obtenu.  
-
-<br><br>
+<br>
 Les drapeaux des pays et les icônes des médailles sont fournies (dossier assets)
