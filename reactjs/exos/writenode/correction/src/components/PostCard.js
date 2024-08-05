@@ -17,7 +17,7 @@ export const PostCard = ({post, toggle, setToggle}) => {
             <p className='description'>{description}</p>
             <p className='control'>
                 <span className='author'>{author.name}</span>
-                { isAuth &&  (author.id === auth.currentUser.uid) &&
+                { isAuth && (author.id === auth.currentUser.uid) &&
                     <span onClick={onDelete} className='delete'><i className='bi bi-trash3'></i></span>
                 }
             </p>

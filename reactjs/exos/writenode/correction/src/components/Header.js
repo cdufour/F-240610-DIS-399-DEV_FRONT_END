@@ -1,16 +1,14 @@
 import { Link, NavLink } from 'react-router-dom';
 import { auth, provider } from '../firebase/config';
 import { signInWithPopup, signOut } from 'firebase/auth';
-import { useState } from 'react';
+
 import logo from '../assets/logo.png';
-import './Header.css';
 
-export const Header = () => {
-
-    const [isAuth, setIsAuth] = useState(JSON.parse(localStorage.getItem('isAuth')) || false);
-
+export const Header = ({isAuth, setIsAuth}) => {
+    
     async function onLogin() {
-        await signInWithPopup(auth, provider);
+        const result = await signInWithPopup(auth, provider);
+        console.log(result);
         setIsAuth(true);
         localStorage.setItem('isAuth', true);
     }

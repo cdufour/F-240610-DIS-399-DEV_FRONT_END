@@ -1,0 +1,22 @@
+{
+    "countries": [
+      {
+        "id": "1",
+        "name": "France",
+        "flag": "france",
+        "medals": [12,14,18]
+      },
+      {
+        "id": "2",
+        "name": "Italie",
+        "flag": "italy",
+        "medals": [8,10,6]
+      },
+      {
+        "id": "3",
+        "name": "Pays-Bas",
+        "flag": "netherlands",
+        "medals": [6,5,4]
+      }
+    ]
+  }
