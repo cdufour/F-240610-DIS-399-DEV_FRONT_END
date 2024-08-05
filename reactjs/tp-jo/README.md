@@ -11,4 +11,7 @@ Affichage les 7 autres pays après clic sur le bouton "Plus" (qui alors devient 
 Utiliser json-server pour récupérer les données (les données des 12 pays) depuis le fichier db.json.  
 
 <br><br>
-Option (facultative): afficher les pays par ordre de médailles décroissant du nombre de médailles d'or obtenu.
+Option (facultative): afficher les pays par ordre décroissant du nombre de médailles d'or obtenu.  
+
+<br><br>
+Les drapeaux des pays et les icônes des médailles sont fournies (dossier assets)
