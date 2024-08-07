@@ -1,7 +1,7 @@
 {
     "questions": [
         {
-            "id": 1,
+            "id": 73,
             "label": "La France est un pays africain",
             "correct": false,
             "comment": "",
@@ -9,7 +9,7 @@
             "category": "Géographie"
         },
         {
-            "id": 2,
+            "id": 74,
             "label": "Flaubert a écrit \"Madame Claude\"",
             "correct": false,
             "comment": "",
@@ -17,7 +17,7 @@
             "category": "Art"
         },
         {
-            "id": 3,
+            "id": 75,
             "label": "Porto est la capitale du Portugal",
             "correct": false,
             "comment": "C'est Lisbonne",
@@ -25,12 +25,53 @@
             "category": "Géographie"
         },
         {
-            "id": 4,
+            "id": 76,
             "label": "Billy Jean est une chanson de Michael Jackson",
             "correct": true,
             "comment": "",
             "level": "Facile",
             "category": "Art"
+        },
+        {
+            "id": 77,
+            "label": "La Juventus de Turin est le club de football le plus titré d'Italie",
+            "correct": true,
+            "comment": "",
+            "level": "Moyen",
+            "category": "Sport"
+        },
+        
+        {
+            "id": 1,
+            "label": "L'Empire romain s'est effondré en 476 après J.-C.",
+            "correct": true,
+            "comment": "",
+            "level": "Facile",
+            "category": "Histoire"
+        },
+        {
+            "id": 2,
+            "label": "La Grande Muraille de Chine est visible depuis la Lune à l'œil nu.",
+            "correct": false,
+            "comment": "",
+            "level": "Facile",
+            "category": "Géographie"
+        },
+        {
+            "id": 3,
+            "label": "L'eau bout à 100 degrés Celsius au niveau de la mer.",
+            "correct": true,
+            "comment": "",
+            "level": "Facile",
+            "category": "Science"
+        },
+        {
+            "id": 4,
+            "label": "Les dauphins sont des poissons.",
+            "correct": false,
+            "comment": "",
+            "level": "Facile",
+            "category": "Nature"
         },
         {
             "id": 5,
@@ -39,6 +80,542 @@
             "comment": "",
             "level": "Moyen",
             "category": "Sport"
+        },
+        {
+            "id": 6,
+            "label": "Le français est la langue officielle du Canada.",
+            "correct": false,
+            "comment": "",
+            "level": "Moyen",
+            "category": "Géographie"
+        },
+        {
+            "id": 7,
+            "label": "La révolution française a débuté en 1789.",
+            "correct": true,
+            "comment": "",
+            "level": "Moyen",
+            "category": "Histoire"
+        },
+        {
+            "id": 8,
+            "label": "Le pH neutre est égal à 7.",
+            "correct": true,
+            "comment": "",
+            "level": "Moyen",
+            "category": "Science"
+        },
+        {
+            "id": 9,
+            "label": "L'éléphant est le plus grand mammifère terrestre.",
+            "correct": true,
+            "comment": "",
+            "level": "Moyen",
+            "category": "Nature"
+        },
+        {
+            "id": 10,
+            "label": "La Terre est la seule planète du système solaire avec des anneaux.",
+            "correct": false,
+            "comment": "",
+            "level": "Moyen",
+            "category": "Science"
+        },
+        {
+            "id": 11,
+            "label": "La Tour Eiffel a été construite pour l'Exposition Universelle de 1889.",
+            "correct": true,
+            "comment": "",
+            "level": "Moyen",
+            "category": "Histoire"
+        },
+        {
+            "id": 12,
+            "label": "L'Australie est le plus grand pays d'Océanie.",
+            "correct": true,
+            "comment": "",
+            "level": "Moyen",
+            "category": "Géographie"
+        },
+        {
+            "id": 13,
+            "label": "Le symbole chimique de l'or est Au.",
+            "correct": true,
+            "comment": "",
+            "level": "Moyen",
+            "category": "Science"
+        },
+        {
+            "id": 14,
+            "label": "Les araignées sont des insectes.",
+            "correct": false,
+            "comment": "",
+            "level": "Moyen",
+            "category": "Nature"
+        },
+        {
+            "id": 15,
+            "label": "Le basket-ball est originaire des États-Unis.",
+            "correct": false,
+            "comment": "",
+            "level": "Moyen",
+            "category": "Sport"
+        },
+        {
+            "id": 16,
+            "label": "L'Antarctique est le continent le plus froid.",
+            "correct": true,
+            "comment": "",
+            "level": "Moyen",
+            "category": "Géographie"
+        },
+        {
+            "id": 17,
+            "label": "La lumière voyage plus vite que le son.",
+            "correct": true,
+            "comment": "",
+            "level": "Moyen",
+            "category": "Science"
+        },
+        {
+            "id": 18,
+            "label": "La déforestation est une cause majeure de la perte de biodiversité.",
+            "correct": true,
+            "comment": "",
+            "level": "Moyen",
+            "category": "Nature"
+        },
+        {
+            "id": 19,
+            "label": "Le Japon a accueilli les Jeux Olympiques d'été en 2020.",
+            "correct": true,
+            "comment": "",
+            "level": "Moyen",
+            "category": "Sport"
+        },
+        {
+            "id": 20,
+            "label": "La capitale de la Norvège est Stockholm.",
+            "correct": false,
+            "comment": "",
+            "level": "Moyen",
+            "category": "Géographie"
+        },
+        {
+            "id": 21,
+            "label": "Le Titanic a coulé en 1912.",
+            "correct": true,
+            "comment": "",
+            "level": "Moyen",
+            "category": "Histoire"
+        },
+        {
+            "id": 22,
+            "label": "Le Mont Everest est la montagne la plus haute du monde.",
+            "correct": true,
+            "comment": "",
+            "level": "Moyen",
+            "category": "Géographie"
+        },
+        {
+            "id": 23,
+            "label": "La formule chimique de l'eau est H2O.",
+            "correct": true,
+            "comment": "",
+            "level": "Moyen",
+            "category": "Science"
+        },
+        {
+            "id": 24,
+            "label": "Les pandas sont originaires d'Afrique.",
+            "correct": false,
+            "comment": "",
+            "level": "Moyen",
+            "category": "Nature"
+        },
+        {
+            "id": 25,
+            "label": "Le golf est un sport olympique depuis les Jeux de Rio 2016.",
+            "correct": true,
+            "comment": "",
+            "level": "Moyen",
+            "category": "Sport"
+        },
+        {
+            "id": 26,
+            "label": "La Chine est le pays le plus peuplé du monde.",
+            "correct": true,
+            "comment": "",
+            "level": "Moyen",
+            "category": "Géographie"
+        },
+        {
+            "id": 27,
+            "label": "L'électricité est une forme d'énergie cinétique.",
+            "correct": false,
+            "comment": "",
+            "level": "Difficile",
+            "category": "Science"
+        },
+        {
+            "id": 28,
+            "label": "Les requins sont des mammifères.",
+            "correct": false,
+            "comment": "",
+            "level": "Moyen",
+            "category": "Nature"
+        },
+        {
+            "id": 29,
+            "label": "Les Jeux Olympiques d'hiver de 2022 se sont tenus à Pékin.",
+            "correct": true,
+            "comment": "",
+            "level": "Moyen",
+            "category": "Sport"
+        },
+        {
+            "id": 30,
+            "label": "La capitale de l'Argentine est Buenos Aires.",
+            "correct": true,
+            "comment": "",
+            "level": "Moyen",
+            "category": "Géographie"
+        },
+        {
+            "id": 31,
+            "label": "La Première Guerre mondiale a commencé en 1914.",
+            "correct": true,
+            "comment": "",
+            "level": "Moyen",
+            "category": "Histoire"
+        },
+        {
+            "id": 32,
+            "label": "Le Kilimandjaro est la montagne la plus haute d'Afrique.",
+            "correct": true,
+            "comment": "",
+            "level": "Moyen",
+            "category": "Géographie"
+        },
+        {
+            "id": 33,
+            "label": "L'ADN est constitué de quatre bases azotées.",
+            "correct": true,
+            "comment": "",
+            "level": "Difficile",
+            "category": "Science"
+        },
+        {
+            "id": 34,
+            "label": "Les hippocampes sont des poissons.",
+            "correct": true,
+            "comment": "",
+            "level": "Moyen",
+            "category": "Nature"
+        },
+        {
+            "id": 35,
+            "label": "Le rugby est un sport originaire d'Australie.",
+            "correct": false,
+            "comment": "",
+            "level": "Moyen",
+            "category": "Sport"
+        },
+        {
+            "id": 36,
+            "label": "Le Sahara est le plus grand désert du monde.",
+            "correct": true,
+            "comment": "",
+            "level": "Moyen",
+            "category": "Géographie"
+        },
+        {
+            "id": 37,
+            "label": "La théorie de la relativité a été formulée par Albert Einstein.",
+            "correct": true,
+            "comment": "",
+            "level": "Moyen",
+            "category": "Science"
+        },
+        {
+            "id": 38,
+            "label": "Les ours polaires sont des carnivores.",
+            "correct": true,
+            "comment": "",
+            "level": "Moyen",
+            "category": "Nature"
+        },
+        {
+            "id": 39,
+            "label": "Le cricket est le sport le plus populaire en Inde.",
+            "correct": true,
+            "comment": "",
+            "level": "Moyen",
+            "category": "Sport"
+        },
+        {
+            "id": 40,
+            "label": "La Russie est le plus grand pays du monde en superficie.",
+            "correct": true,
+            "comment": "",
+            "level": "Moyen",
+            "category": "Géographie"
+        },
+        {
+            "id": 41,
+            "label": "La guerre de Cent Ans a duré 100 ans.",
+            "correct": false,
+            "comment": "",
+            "level": "Difficile",
+            "category": "Histoire"
+        },
+        {
+            "id": 42,
+            "label": "Le Gange est le fleuve le plus long du monde.",
+            "correct": false,
+            "comment": "",
+            "level": "Moyen",
+            "category": "Géographie"
+        },
+        {
+            "id": 43,
+            "label": "La vitesse de la lumière dans le vide est d'environ 300 000 km/s.",
+            "correct": true,
+            "comment": "",
+            "level": "Difficile",
+            "category": "Science"
+        },
+        {
+            "id": 44,
+            "label": "Les coraux sont des animaux.",
+            "correct": true,
+            "comment": "",
+            "level": "Moyen",
+            "category": "Nature"
+        },
+        {
+            "id": 45,
+            "label": "La Coupe du Monde de la FIFA 2018 s'est tenue en Russie.",
+            "correct": true,
+            "comment": "",
+            "level": "Moyen",
+            "category": "Sport"
+        },
+        {
+            "id": 46,
+            "label": "L'Amazonie est la plus grande forêt tropicale du monde.",
+            "correct": true,
+            "comment": "",
+            "level": "Moyen",
+            "category": "Géographie"
+        },
+        {
+            "id": 47,
+            "label": "L'oxygène est l'élément chimique le plus abondant dans l'univers.",
+            "correct": false,
+            "comment": "",
+            "level": "Difficile",
+            "category": "Science"
+        },
+        {
+            "id": 48,
+            "label": "Les éléphants d'Afrique ont des oreilles plus grandes que les éléphants d'Asie.",
+            "correct": true,
+            "comment": "",
+            "level": "Moyen",
+            "category": "Nature"
+        },
+        {
+            "id": 49,
+            "label": "Le badminton est un sport olympique depuis 1992.",
+            "correct": true,
+            "comment": "",
+            "level": "Moyen",
+            "category": "Sport"
+        },
+        {
+            "id": 50,
+            "label": "La capitale de l'Australie est Sydney.",
+            "correct": false,
+            "comment": "",
+            "level": "Moyen",
+            "category": "Géographie"
+        },
+        {
+            "id": 51,
+            "label": "La Déclaration des Droits de l'Homme et du Citoyen date de 1789.",
+            "correct": true,
+            "comment": "",
+            "level": "Moyen",
+            "category": "Histoire"
+        },
+        {
+            "id": 52,
+            "label": "Le Nil est le plus long fleuve du monde.",
+            "correct": true,
+            "comment": "",
+            "level": "Moyen",
+            "category": "Géographie"
+        },
+        {
+            "id": 53,
+            "label": "La gravité est plus forte sur la Lune que sur la Terre.",
+            "correct": false,
+            "comment": "",
+            "level": "Difficile",
+            "category": "Science"
+        },
+        {
+            "id": 54,
+            "label": "Les manchots vivent en Antarctique.",
+            "correct": true,
+            "comment": "",
+            "level": "Moyen",
+            "category": "Nature"
+        },
+        {
+            "id": 55,
+            "label": "Le tennis de table est un sport olympique depuis 1988.",
+            "correct": true,
+            "comment": "",
+            "level": "Moyen",
+            "category": "Sport"
+        },
+        {
+            "id": 56,
+            "label": "Le Danube est le plus long fleuve d'Europe.",
+            "correct": false,
+            "comment": "",
+            "level": "Difficile",
+            "category": "Géographie"
+        },
+        {
+            "id": 57,
+            "label": "Le mur de Berlin est tombé en 1989.",
+            "correct": true,
+            "comment": "",
+            "level": "Moyen",
+            "category": "Histoire"
+        },
+        {
+            "id": 58,
+            "label": "Le Mississippi est le plus long fleuve des États-Unis.",
+            "correct": false,
+            "comment": "",
+            "level": "Difficile",
+            "category": "Géographie"
+        },
+        {
+            "id": 59,
+            "label": "Les molécules d'eau sont composées de deux atomes d'hydrogène et un atome d'oxygène.",
+            "correct": true,
+            "comment": "",
+            "level": "Moyen",
+            "category": "Science"
+        },
+        {
+            "id": 60,
+            "label": "Les chauves-souris sont les seuls mammifères capables de voler.",
+            "correct": true,
+            "comment": "",
+            "level": "Moyen",
+            "category": "Nature"
+        },
+        {
+            "id": 61,
+            "label": "Le rugby à XIII se joue avec 15 joueurs par équipe.",
+            "correct": false,
+            "comment": "",
+            "level": "Difficile",
+            "category": "Sport"
+        },
+        {
+            "id": 62,
+            "label": "Le Mont Blanc est la plus haute montagne d'Europe.",
+            "correct": false,
+            "comment": "",
+            "level": "Difficile",
+            "category": "Géographie"
+        },
+        {
+            "id": 63,
+            "label": "L'Euro de football 2020 s'est déroulé dans plusieurs pays européens.",
+            "correct": true,
+            "comment": "",
+            "level": "Moyen",
+            "category": "Sport"
+        },
+        {
+            "id": 64,
+            "label": "Les grenouilles sont des reptiles.",
+            "correct": false,
+            "comment": "",
+            "level": "Moyen",
+            "category": "Nature"
+        },
+        {
+            "id": 65,
+            "label": "Le pH de l'eau pure est de 7.",
+            "correct": true,
+            "comment": "",
+            "level": "Difficile",
+            "category": "Science"
+        },
+        {
+            "id": 66,
+            "label": "L'arc de Triomphe se trouve à Paris.",
+            "correct": true,
+            "comment": "",
+            "level": "Moyen",
+            "category": "Géographie"
+        },
+        {
+            "id": 67,
+            "label": "Les koalas vivent uniquement en Nouvelle-Zélande.",
+            "correct": false,
+            "comment": "",
+            "level": "Moyen",
+            "category": "Nature"
+        },
+        {
+            "id": 68,
+            "label": "Les Jeux Olympiques modernes ont commencé en 1896.",
+            "correct": true,
+            "comment": "",
+            "level": "Moyen",
+            "category": "Histoire"
+        },
+        {
+            "id": 69,
+            "label": "La République Tchèque et la Slovaquie étaient autrefois un seul pays.",
+            "correct": true,
+            "comment": "",
+            "level": "Moyen",
+            "category": "Histoire"
+        },
+        {
+            "id": 70,
+            "label": "Les baleines sont des poissons.",
+            "correct": false,
+            "comment": "",
+            "level": "Moyen",
+            "category": "Nature"
+        },
+        {
+            "id": 71,
+            "label": "Le vélo est un sport olympique depuis 1896.",
+            "correct": true,
+            "comment": "",
+            "level": "Difficile",
+            "category": "Sport"
+        },
+        {
+            "id": 72,
+            "label": "Le Sahara se trouve principalement en Asie.",
+            "correct": false,
+            "comment": "",
+            "level": "Moyen",
+            "category":"Géographie"
         }
     ]
 }
