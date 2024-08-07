@@ -1,0 +1,11 @@
+.team {
+  border-bottom: 1px solid #dadce0;
+}
+
+.team img {
+  width: 12px
+}
+
+.team:hover {
+  background-color: #ebf1ff
+}
