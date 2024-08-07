@@ -12,3 +12,4 @@
 | 26 et 29 juillet       | Extjs                |
 | 30 juillet-5 août       | Reactjs                |
 | 6-7 août       | Projet Frameworks                |
+| 5-10 septembre       | Projet final                |
